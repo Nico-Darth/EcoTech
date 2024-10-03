@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const links = document.querySelectorAll(".navbar nav ul li a");
     const sections = document.querySelectorAll(".section");
 
-    // Change link color on scroll
+
     window.addEventListener("scroll", function () {
         let currentSection = "";
         sections.forEach(section => {
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Cart management
+
     const cart = JSON.parse(localStorage.getItem('cart')) || {};
 
     document.querySelectorAll('.product-card').forEach(card => {
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Update cart display on cart page
+
     const cartItemsContainer = document.querySelector('.cart-items');
     const sortOptions = document.querySelector('.sort-options');
     const sortSelect = document.getElementById('sort');
@@ -73,17 +73,17 @@ document.addEventListener("DOMContentLoaded", function () {
                 emptyMessage.style.color = '#555';
                 cartItemsContainer.appendChild(emptyMessage);
 
-                // Hide sort options if the cart is empty
+
                 if (sortOptions) {
                     sortOptions.style.display = 'none';
                 }
             } else {
-                // Show sort options if the cart is not empty
+
                 if (sortOptions) {
                     sortOptions.style.display = 'block';
                 }
 
-                // Convert cart object to an array for sorting
+
                 const cartArray = Object.entries(cart).map(([id, item]) => ({ id, ...item }));
 
                 // Sort based on selected criteria
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     cartArray.sort((a, b) => a.timestamp - b.timestamp);
                 }
 
-                // Display sorted items
+
                 cartArray.forEach(item => {
                     const itemElement = document.createElement('div');
                     itemElement.className = 'product-card';
@@ -110,20 +110,20 @@ document.addEventListener("DOMContentLoaded", function () {
                     cartItemsContainer.appendChild(itemElement);
                 });
 
-                // Add event listeners for remove buttons
+
                 // Add event listeners for remove buttons
                 document.querySelectorAll('.remove-item').forEach(button => {
                     button.addEventListener('click', function () {
                         const productId = button.getAttribute('data-id');
-                        delete cart[productId]; // Remove the product from the cart
-                        localStorage.setItem('cart', JSON.stringify(cart)); // Update local storage
-                        updateCartDisplay(); // Refresh the cart display
+                        delete cart[productId];
+                        localStorage.setItem('cart', JSON.stringify(cart));
+                        updateCartDisplay();
                     });
                 });
             }
         }
 
-        // Update display on sort change
+
         if (sortSelect) {
             sortSelect.addEventListener('change', updateCartDisplay);
         }
@@ -131,11 +131,11 @@ document.addEventListener("DOMContentLoaded", function () {
         updateCartDisplay();
     }
 
-    // Form validation for contact form with shake animation
+
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevent form submission
+            event.preventDefault();
 
             let isFormValid = true;
             const formElements = this.elements;
@@ -159,16 +159,16 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             if (isFormValid) {
-                // Form is valid, display a thank you message
+
                 alert('Form submitted successfully!');
 
-                // Create a thank you message element
+
                 const thankYouMessage = document.createElement('p');
                 thankYouMessage.textContent = "Thank you for contacting us! We will get back to you shortly.";
-                thankYouMessage.style.color = '#2E8B57'; // Set the text color to a green shade
-                thankYouMessage.style.marginTop = '20px'; // Add margin to the top
+                thankYouMessage.style.color = '#2E8B57';
+                thankYouMessage.style.marginTop = '20px';
 
-                // Append the thank you message to the form
+
                 contactForm.appendChild(thankYouMessage);
             }
         });

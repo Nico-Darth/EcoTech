@@ -7,20 +7,20 @@
 body {
     font-family: Arial, sans-serif;
     color: #ffffff;
-    /* Default text color set to white */
+
 }
 
 .navbar {
     position: sticky;
     top: 0;
     background: linear-gradient(90deg, #3A6351, #1B3A4B);
-    /* Initial gradient background with more pronounced colors */
+
     color: #ffffff;
-    /* Navbar text color set to white */
+
     padding: 30px 0;
     z-index: 1000;
     transition: background 1s ease;
-    /* Smooth transition for background */
+
 }
 
 .navbar .container {
@@ -34,9 +34,9 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: #ffffff;
-    /* Logo text color set to white */
+
     transition: color 0.3s ease;
-    /* Smooth transition for logo color */
+
 }
 
 .navbar nav ul {
@@ -51,21 +51,21 @@ body {
 
 .navbar nav ul li a {
     color: #ffffff;
-    /* Navbar links color set to white */
+
     text-decoration: none;
     font-size: 18px;
     padding-bottom: 10px;
-    /* Add padding to make space for the underline */
+
     transition: color 0.3s ease, transform 0.3s ease;
-    /* Smooth transition for text color and transform */
+
     position: relative;
 }
 
 .navbar nav ul li a:hover {
     color: #FFBF69;
-    /* Change color on hover */
+
     transform: translateY(-3px);
-    /* Slight upward movement on hover */
+
 }
 
 .navbar nav ul li a::after {
@@ -74,7 +74,7 @@ body {
     width: 0;
     height: 2px;
     background: #FFBF69;
-    /* Underline color */
+
     transition: width 0.3s ease;
     position: absolute;
     bottom: -5px;
@@ -88,7 +88,7 @@ body {
 
 .navbar nav ul li a.active {
     color: #FFBF69;
-    /* Highlight active link */
+
 }
 
 .section {
@@ -129,65 +129,65 @@ body {
 }
 
 #home h3 {
-    margin-top: 20px; /* Adjust the value as needed */
+    margin-top: 20px;
 }
 
-#home h1{
+#home h1 {
     font-size: 36px;
 }
 
 #products {
     background-color: #dfdfdf;
-    /* Light gray background color for the products section */
+
     color: #000000;
-    /* Set text color to black for better readability */
+
 }
 
 #about {
-    background-color: #f0f0f0; /* Light gray background */
-    color: #333333; /* Dark text color for readability */
-    padding: 60px 20px; /* Padding around the content */
+    background-color: #f0f0f0;
+    color: #333333;
+    padding: 60px 20px;
     display: flex;
-    flex-direction: column; /* Arrange items in a column */
-    align-items: center; /* Center items horizontally */
-    text-align: center; /* Center align text */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 #about h1 {
-    font-size: 36px; /* Larger font size for the heading */
-    margin-bottom: 20px; /* Space below the heading */
-    color: #3A6351; /* Green color for the heading to match the theme */
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #3A6351;
 }
 
 #about p {
-    font-size: 18px; /* Font size for the paragraph text */
-    line-height: 1.6; /* Line height for better readability */
-    margin-bottom: 20px; /* Space below each paragraph */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 #about strong {
-    color: #1B3A4B; /* Darker color for emphasis */
+    color: #1B3A4B;
 }
 
 #about em {
-    font-style: italic; /* Italicize emphasized text */
+    font-style: italic;
 }
 
 #cart {
     background-color: #dfdfdf;
-    /* Light gray background color for the cart section */
+
     color: #000000;
-    /* Set text color to black for better readability */
+
 }
 
 #contact {
     background-color: #dfdfdf;
-    /* Light gray background color for the contact section */
+
     color: #000000;
-    /* Set text color to black for better readability */
+
 }
 
-#contact h1{
+#contact h1 {
     font-size: 28px;
 }
 
@@ -195,13 +195,13 @@ body {
     background-color: #dfdfdf;
     color: #000000;
     display: flex;
-    flex-direction: column; /* Arrange items in a column */
-    align-items: center; /* Center items horizontally */
-    padding: 60px 20px; /* Add padding around the content */
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
 }
 
 #products h1 {
-    margin-bottom: 20px; /* Space below the heading */
+    margin-bottom: 20px;
     font-size: 35px;
 }
 
@@ -212,9 +212,9 @@ body {
     gap: 20px;
     padding: 20px;
     max-width: 1000px;
-    /* Adjust as needed */
+
     margin: 0 auto;
-    /* Center the container */
+
 }
 
 .product-card {
@@ -247,7 +247,7 @@ body {
 
 .product-card .quantity-controls {
     margin-bottom: 10px;
-    /* Add margin below the quantity controls */
+
 }
 
 .product-card button.add-to-cart {
@@ -259,7 +259,7 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 10px;
-    /* Add margin above the add-to-cart button */
+
 }
 
 .product-card button:hover {
@@ -304,7 +304,7 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 10px;
-    /* Add margin above the remove button */
+
 }
 
 .remove-item:hover {
@@ -313,14 +313,14 @@ body {
 
 #contact h2 {
     margin-bottom: 60px;
-    /* Add bottom margin for spacing */
+
 }
 
 .contact-form {
     max-width: 800px;
-    /* Increase the width to make the form wider */
+
     margin: 20px auto 0;
-    /* Center the form and add top margin */
+
     text-align: left;
 }
 
@@ -336,9 +336,9 @@ body {
 
 .contact-form input {
     width: 500px;
-    /* Ensure the input fields take up full width of the form */
+
     max-width: 800px;
-    /* Set a maximum width to prevent them from getting too large */
+
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -347,9 +347,9 @@ body {
 
 .contact-form textarea {
     width: 500px;
-    /* Ensure the input fields take up full width of the form */
+
     max-width: 800px;
-    /* Set a maximum width to prevent them from getting too large */
+
     padding: 10px;
     height: 150px;
     border: 1px solid #ccc;
@@ -371,9 +371,9 @@ body {
 .contact-form input.success,
 .contact-form textarea.success {
     border-color: #2E8B57;
-    /* Darker green color */
+
     transition: border-color 0.5s ease;
-    /* Smooth transition for border color */
+
 }
 
 .submit-button {
@@ -390,36 +390,32 @@ body {
     background-color: #FFBF69;
 }
 
-/* Define a keyframes animation for the gradient border */
-/* Define a keyframes animation for the gradient border */
+
 @keyframes gradient-border {
-    0% {
-        border-color: #3A6351;
-        /* Green color from the navbar */
-    }
+    0% {}
 
     50% {
         border-color: #FFBF69;
-        /* Yellow color of the links */
+
     }
 
     100% {
         border-color: #3A6351;
-        /* Return to green color */
+
     }
 }
 
-/* Apply styles to input and textarea on focus */
+
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    /* Remove default outline */
+
     animation: gradient-border 3s infinite;
-    /* Apply animation */
+
     border-width: 2px;
-    /* Ensure border is visible */
+
     border-style: solid;
-    /* Ensure border style is solid */
+
 }
 
 @keyframes shake {
@@ -447,21 +443,21 @@ body {
 .contact-form input.error,
 .contact-form textarea.error {
     animation: shake 0.3s ease;
-    /* Reduced duration for faster shake */
+
 }
 
 .sort-options {
     margin-bottom: 20px;
-    /* Add space below the sort options */
+
     text-align: left;
-    /* Align the dropdown to the left */
+
 }
 
 .sort-options label {
     font-size: 16px;
     color: #000000;
     margin-right: 10px;
-    /* Space between label and dropdown */
+
 }
 
 .sort-options select {
@@ -478,10 +474,10 @@ body {
 .sort-options select:focus {
     outline: none;
     border-color: #3A6351;
-    /* Match the green color from the navbar */
+
 }
 
 .sort-options select:hover {
     border-color: #FFBF69;
-    /* Match the yellow color of the links */
+
 }
