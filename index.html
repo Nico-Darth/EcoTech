@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">EcoTech</div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="section">
+        <h1>Welcome to EcoTech</h1>
+        <h3>Your source for eco-friendly tech solutions</h3> <!-- Added subtitle -->
+        <button class="cta-button" onclick="location.href='#products'">Explore Products</button>
+    </section>
+    <section id="products" class="section">
+        <h1>Our Products</h1>
+        <div class="product-cards">
+            <div class="product-card">
+                <img src="assets/dummy-image.jpeg" alt="Product 1">
+                <h2>Product 1</h2>
+                <p>Description of Product 1.</p>
+                <p class="price">$10.00</p> <!-- Added price -->
+                <div class="quantity-controls">
+                    <button class="minus" data-id="Product 1">-</button>
+                    <span class="quantity" data-id="Product 1">1</span>
+                    <button class="plus" data-id="Product 1">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="assets/dummy-image.jpeg" alt="Product 2">
+                <h2>Product 2</h2>
+                <p>Description of Product 2.</p>
+                <p class="price">$15.00</p> <!-- Added price -->
+                <div class="quantity-controls">
+                    <button class="minus" data-id="Product 2">-</button>
+                    <span class="quantity" data-id="Product 2">1</span>
+                    <button class="plus" data-id="Product 2">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="assets/dummy-image.jpeg" alt="Product 3">
+                <h2>Product 3</h2>
+                <p>Description of Product 3.</p>
+                <p class="price">$20.00</p> <!-- Added price -->
+                <div class="quantity-controls">
+                    <button class="minus" data-id="Product 3">-</button>
+                    <span class="quantity" data-id="Product 3">1</span>
+                    <button class="plus" data-id="Product 3">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="assets/dummy-image.jpeg" alt="Product 4">
+                <h2>Product 4</h2>
+                <p>Description of Product 4.</p>
+                <p class="price">$25.00</p> <!-- Added price -->
+                <div class="quantity-controls">
+                    <button class="minus" data-id="Product 4">-</button>
+                    <span class="quantity" data-id="Product 4">1</span>
+                    <button class="plus" data-id="Product 4">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="assets/dummy-image.jpeg" alt="Product 5">
+                <h2>Product 5</h2>
+                <p>Description of Product 5.</p>
+                <p class="price">$30.00</p> <!-- Added price -->
+                <div class="quantity-controls">
+                    <button class="minus" data-id="Product 5">-</button>
+                    <span class="quantity" data-id="Product 5">1</span>
+                    <button class="plus" data-id="Product 5">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="assets/dummy-image.jpeg" alt="Product 6">
+                <h2>Product 6</h2>
+                <p>Description of Product 6.</p>
+                <p class="price">$35.00</p> <!-- Added price -->
+                <div class="quantity-controls">
+                    <button class="minus" data-id="Product 6">-</button>
+                    <span class="quantity" data-id="Product 6">1</span>
+                    <button class="plus" data-id="Product 6">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="section">
+        <h1>About Us</h1>
+        <p>
+            At EcoTech, we believe that technology has the power to improve the world without burdening the planet. <br>
+            We are an innovative startup focused on developing and selling sustainable technology products. <br>
+            Our mission is to make green solutions accessible to everyone, with the goal of reducing the ecological footprint and creating a healthier future for our planet.
+          </p>
+          <p>
+            Whether it's portable solar chargers, smart energy-saving devices, or gadgets made from recycled materials, <br>
+            at EcoTech, we strive to combine technology with environmental awareness. <br>
+            All our products are carefully selected based on their sustainability, quality, and positive impact on the environment.
+          </p>
+          <p>
+            We aim not only to provide technology that makes your life easier, but also to offer solutions that promote a sustainable lifestyle. <br>
+            Together, we can make a difference, one eco-friendly choice at a time.
+          </p>
+          <p><strong>Sustainability, innovation, and technology – that’s what drives <em>EcoTech</em>.</strong></p>
+    </section>
+    <section id="contact" class="section">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <small class="error-message"></small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <small class="error-message"></small>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
+                    <small class="error-message"></small>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

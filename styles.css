@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    /* Default text color set to white */
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(90deg, #3A6351, #1B3A4B);
+    /* Initial gradient background with more pronounced colors */
+    color: #ffffff;
+    /* Navbar text color set to white */
+    padding: 30px 0;
+    z-index: 1000;
+    transition: background 1s ease;
+    /* Smooth transition for background */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    /* Logo text color set to white */
+    transition: color 0.3s ease;
+    /* Smooth transition for logo color */
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+    position: relative;
+}
+
+.navbar nav ul li a {
+    color: #ffffff;
+    /* Navbar links color set to white */
+    text-decoration: none;
+    font-size: 18px;
+    padding-bottom: 10px;
+    /* Add padding to make space for the underline */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Smooth transition for text color and transform */
+    position: relative;
+}
+
+.navbar nav ul li a:hover {
+    color: #FFBF69;
+    /* Change color on hover */
+    transform: translateY(-3px);
+    /* Slight upward movement on hover */
+}
+
+.navbar nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #FFBF69;
+    /* Underline color */
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.navbar nav ul li a:hover::after,
+.navbar nav ul li a.active::after {
+    width: 100%;
+}
+
+.navbar nav ul li a.active {
+    color: #FFBF69;
+    /* Highlight active link */
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home {
+    background-image: url('assets/solar-panel.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cta-button {
+    background-color: #FFBF69;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #3A6351;
+}
+
+#home h3 {
+    margin-top: 20px; /* Adjust the value as needed */
+}
+
+#home h1{
+    font-size: 36px;
+}
+
+#products {
+    background-color: #dfdfdf;
+    /* Light gray background color for the products section */
+    color: #000000;
+    /* Set text color to black for better readability */
+}
+
+#about {
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333333; /* Dark text color for readability */
+    padding: 60px 20px; /* Padding around the content */
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center align text */
+}
+
+#about h1 {
+    font-size: 36px; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #3A6351; /* Green color for the heading to match the theme */
+}
+
+#about p {
+    font-size: 18px; /* Font size for the paragraph text */
+    line-height: 1.6; /* Line height for better readability */
+    margin-bottom: 20px; /* Space below each paragraph */
+}
+
+#about strong {
+    color: #1B3A4B; /* Darker color for emphasis */
+}
+
+#about em {
+    font-style: italic; /* Italicize emphasized text */
+}
+
+#cart {
+    background-color: #dfdfdf;
+    /* Light gray background color for the cart section */
+    color: #000000;
+    /* Set text color to black for better readability */
+}
+
+#contact {
+    background-color: #dfdfdf;
+    /* Light gray background color for the contact section */
+    color: #000000;
+    /* Set text color to black for better readability */
+}
+
+#contact h1{
+    font-size: 28px;
+}
+
+#products {
+    background-color: #dfdfdf;
+    color: #000000;
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+    padding: 60px 20px; /* Add padding around the content */
+}
+
+#products h1 {
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 35px;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    /* Adjust as needed */
+    margin: 0 auto;
+    /* Center the container */
+}
+
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.product-card h2 {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #000000;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #555555;
+}
+
+.product-card .quantity-controls {
+    margin-bottom: 10px;
+    /* Add margin below the quantity controls */
+}
+
+.product-card button.add-to-cart {
+    background-color: #3A6351;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    /* Add margin above the add-to-cart button */
+}
+
+.product-card button:hover {
+    background-color: #FFBF69;
+}
+
+.product-card .price {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.product-card .quantity {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.product-card .minus,
+.product-card .plus {
+    background-color: #3A6351;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card .minus:hover,
+.product-card .plus:hover {
+    background-color: #FFBF69;
+}
+
+.remove-item {
+    background-color: #3A6351;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    /* Add margin above the remove button */
+}
+
+.remove-item:hover {
+    background-color: #FFBF69;
+}
+
+#contact h2 {
+    margin-bottom: 60px;
+    /* Add bottom margin for spacing */
+}
+
+.contact-form {
+    max-width: 800px;
+    /* Increase the width to make the form wider */
+    margin: 20px auto 0;
+    /* Center the form and add top margin */
+    text-align: left;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.contact-form input {
+    width: 500px;
+    /* Ensure the input fields take up full width of the form */
+    max-width: 800px;
+    /* Set a maximum width to prevent them from getting too large */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form textarea {
+    width: 500px;
+    /* Ensure the input fields take up full width of the form */
+    max-width: 800px;
+    /* Set a maximum width to prevent them from getting too large */
+    padding: 10px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form .error-message {
+    color: #ff0000;
+    margin-top: 5px;
+    display: none;
+}
+
+.contact-form input.error,
+.contact-form textarea.error {
+    border-color: #ff0000;
+}
+
+.contact-form input.success,
+.contact-form textarea.success {
+    border-color: #2E8B57;
+    /* Darker green color */
+    transition: border-color 0.5s ease;
+    /* Smooth transition for border color */
+}
+
+.submit-button {
+    background-color: #3A6351;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #FFBF69;
+}
+
+/* Define a keyframes animation for the gradient border */
+/* Define a keyframes animation for the gradient border */
+@keyframes gradient-border {
+    0% {
+        border-color: #3A6351;
+        /* Green color from the navbar */
+    }
+
+    50% {
+        border-color: #FFBF69;
+        /* Yellow color of the links */
+    }
+
+    100% {
+        border-color: #3A6351;
+        /* Return to green color */
+    }
+}
+
+/* Apply styles to input and textarea on focus */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    /* Remove default outline */
+    animation: gradient-border 3s infinite;
+    /* Apply animation */
+    border-width: 2px;
+    /* Ensure border is visible */
+    border-style: solid;
+    /* Ensure border style is solid */
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.contact-form input.error,
+.contact-form textarea.error {
+    animation: shake 0.3s ease;
+    /* Reduced duration for faster shake */
+}
+
+.sort-options {
+    margin-bottom: 20px;
+    /* Add space below the sort options */
+    text-align: left;
+    /* Align the dropdown to the left */
+}
+
+.sort-options label {
+    font-size: 16px;
+    color: #000000;
+    margin-right: 10px;
+    /* Space between label and dropdown */
+}
+
+.sort-options select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #000000;
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.sort-options select:focus {
+    outline: none;
+    border-color: #3A6351;
+    /* Match the green color from the navbar */
+}
+
+.sort-options select:hover {
+    border-color: #FFBF69;
+    /* Match the yellow color of the links */
+}
